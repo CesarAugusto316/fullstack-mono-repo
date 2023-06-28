@@ -1,7 +1,7 @@
 {
-  "name": "node01",
+  "name": "api01",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "apps/node01/src",
+  "sourceRoot": "apps/api01/src",
   "projectType": "application",
   "targets": {
     "build": {
@@ -10,12 +10,12 @@
       "defaultConfiguration": "production",
       "options": {
         "platform": "node",
-        "outputPath": "dist/apps/node01",
+        "outputPath": "dist/apps/api01",
         "format": ["cjs"],
         "bundle": false,
-        "main": "apps/node01/src/main.ts",
-        "tsConfig": "apps/node01/tsconfig.app.json",
-        "assets": ["apps/node01/src/assets"],
+        "main": "apps/api01/src/main.ts",
+        "tsConfig": "apps/api01/tsconfig.app.json",
+        "assets": ["apps/api01/src/assets"],
         "generatePackageJson": true,
         "esbuildOptions": {
           "sourcemap": true,
@@ -40,14 +40,14 @@
       "executor": "@nx/js:node",
       "defaultConfiguration": "development",
       "options": {
-        "buildTarget": "node01:build"
+        "buildTarget": "api01:build"
       },
       "configurations": {
         "development": {
-          "buildTarget": "node01:build:development"
+          "buildTarget": "api01:build:development"
         },
         "production": {
-          "buildTarget": "node01:build:production"
+          "buildTarget": "api01:build:production"
         }
       }
     },
@@ -55,14 +55,14 @@
       "executor": "@nx/linter:eslint",
       "outputs": ["{options.outputFile}"],
       "options": {
-        "lintFilePatterns": ["apps/node01/**/*.ts"]
+        "lintFilePatterns": ["apps/api01/**/*.ts"]
       }
     },
     "test": {
       "executor": "@nx/jest:jest",
       "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
       "options": {
-        "jestConfig": "apps/node01/jest.config.ts",
+        "jestConfig": "apps/api01/jest.config.ts",
         "passWithNoTests": true
       },
       "configurations": {

@@ -1,0 +1,23 @@
+{
+    "_id": "e5e6664d-a6c7-4141-8738-8db4586819b1",
+    "colName": "api01",
+    "created": "2023-06-28T14:35:42.241Z",
+    "sortNum": 10000,
+    "folders": [],
+    "requests": [
+        {
+            "_id": "72806e0a-baa2-401f-a083-c211f40c2824",
+            "colId": "e5e6664d-a6c7-4141-8738-8db4586819b1",
+            "containerId": "",
+            "name": "get",
+            "url": "http://localhost:3000",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2023-06-28T14:35:55.573Z",
+            "modified": "2023-06-28T14:36:06.566Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        }
+    ]
+}
