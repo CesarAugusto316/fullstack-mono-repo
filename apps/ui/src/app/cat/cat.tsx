@@ -1,7 +1,7 @@
 import styles from './cat.module.scss';
 
 /* eslint-disable-next-line */
-export interface CatProps {}
+export interface CatProps { }
 
 export function Cat(props: CatProps) {
   return (

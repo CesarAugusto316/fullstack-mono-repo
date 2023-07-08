@@ -1,5 +1,6 @@
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 import styles from './app.module.scss';
+import { designPatterns } from '@patterns'
 
 import NxWelcome from './nx-welcome';
 
