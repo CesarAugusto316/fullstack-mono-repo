@@ -75,7 +75,7 @@ const productOne = pb.build();
 //   setAttributeOne(value: string): ProductTwoBuilder {
 //     this.product.attributeOne = value;
 //     return this;
-//   }
+//   }  
 
 //   setAttributeTwo(value: string): ProductTwoBuilder {
 //     this.product.attributeTwo = value;
